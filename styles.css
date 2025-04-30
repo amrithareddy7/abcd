@@ -1,0 +1,329 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: url('https://media.vogue.in/wp-content/uploads/2016/10/Cover-Story-October-2016.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-left a, .nav-right a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-center {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white;
+    text-align: center;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    background: url('https://zouk.co.in/cdn/shop/files/Jaipur_Fresco_Blue_Women_s_Office_Bag_9a5892c8-c967-4449-8979-a78a819f659c.jpg?v=1720694824&width=1500') no-repeat center center/cover;
+}
+.login-container {
+    background: rgba(240, 230, 230, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body.register-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://zouk.co.in/cdn/shop/files/Jaipur_Fresco_Blue_Women_s_Office_Bag_9a5892c8-c967-4449-8979-a78a819f659c.jpg?v=1720694824&width=1500') no-repeat center center/cover;
+    padding: 20px;
+}
+
+.register-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 90%;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.full-width {
+    width: 100%;
+}
+
+label {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button {
+    background: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+}
+
+button:hover {
+    background: #555;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.success-message {
+    color: green;
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body.catalog-page {
+    background-image: url('http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcRAbecG_7gzaK2TBdALVv3bvi5EKT2S5MVeZmuzqm0Z52GsaadqytVyHOrG2asNG9J89V_S7T7C0tW8MVvgFSY');
+    background-color: black !important;
+    color: rgb(243, 239, 239);
+    text-align: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.catalog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.catalog-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.catalog-item:hover {
+    transform: scale(1.05);
+}
+
+.catalog-item img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.catalog-item h2 {
+    margin-bottom: 10px;
+}
+
+.add-to-cart {
+    background-color: #7e0903;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+.add-to-cart:hover {
+    background-color: #dc524b;
+}
+
+@media (max-width: 600px) {
+    .catalog-container {
+        grid-template-columns: 1fr;
+    }
+}
+.cart-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcRAbecG_7gzaK2TBdALVv3bvi5EKT2S5MVeZmuzqm0Z52GsaadqytVyHOrG2asNG9J89V_S7T7C0tW8MVvgFSY') no-repeat center center/cover;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: black;
+}
+.cart-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 900px;
+    opacity: 0.8;
+    background: rgb(225, 218, 240);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    color: black;
+}
+.cart-items {
+    width: 100%;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #3d3232;
+}
+.cart-item img {
+    width: 120px;
+    height: 130px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.item-info {
+    flex: 1;
+}
+.remove-item {
+    background: #201632;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.remove-item:hover {
+    background: #2b143a;
+}
+.cart-summary {
+    width: 100%;
+    opacity: 0.6;
+    max-width: 900px;
+    background: #0d0b12;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1);
+    text-align: center;
+    margin-top: 20px;
+}
+#checkout-btn {
+    background: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+#checkout-btn:hover {
+    background: #9b74e3;
+}
